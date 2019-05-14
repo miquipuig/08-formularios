@@ -39,7 +39,10 @@
     <div class="form-group row ">
         <label class="col-2 col-form-label ">Pais</label>
         <div class="col-md-8 ">
-            <select [(ngModel)]="usuraio.pais" class="form-control" name=""></select>
+            <select [(ngModel)]="usuario.pais" class="form-control" name="pais">
+            <option value="">Seleccione un pais</option>
+            <option *ngFor="let pais of paises" [value]="pais.codigo"]>{{pais.nombre}}</option>
+        </select>
         </div>
     </div>
 

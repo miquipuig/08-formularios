@@ -19,16 +19,16 @@ export class TemplateComponent implements OnInit {
     apellido: null,
     correo: null,
     pais: 'CRI'
-  };
+  }
 
-  pais = [
-    {
+  paises = [{
     codigo: 'CRI',
-    pais: 'Costa Rica'
-  }, {
+    nombre: 'Costa Rica'
+  },
+  {
     codigo: 'ESP',
-    pais: 'España'
-  }];
+    nombre: 'España'
+  }]
   constructor() { }
   ngOnInit() {
   }
