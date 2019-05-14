@@ -17,9 +17,18 @@ export class TemplateComponent implements OnInit {
   usuario:Object = {
     nombre: null,
     apellido: null,
-    correo: null
-  }
+    correo: null,
+    pais: 'CRI'
+  };
 
+  pais = [
+    {
+    codigo: 'CRI',
+    pais: 'Costa Rica'
+  }, {
+    codigo: 'ESP',
+    pais: 'España'
+  }];
   constructor() { }
   ngOnInit() {
   }
