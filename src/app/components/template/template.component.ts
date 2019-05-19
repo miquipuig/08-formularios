@@ -18,8 +18,10 @@ export class TemplateComponent implements OnInit {
     nombre: null,
     apellido: null,
     correo: null,
-    pais: 'CRI'
-  }
+    pais: '',
+    sexo: 'Hombre',
+    acepta: false
+  };
 
   paises = [{
     codigo: 'CRI',
@@ -28,11 +30,14 @@ export class TemplateComponent implements OnInit {
   {
     codigo: 'ESP',
     nombre: 'España'
-  }]
+  }];
+  
+  sexos: string[] = ['Hombre', 'Mujer', 'Sin definir'];
+
   constructor() { }
   ngOnInit() {
   }
-  guardar( forma: NgForm ){
+  guardar( forma: NgForm ) {
     console.log( "Formulario Posteado" );
     console.log( "ngForm: ", forma);
     console.log( "Valor forma", forma.value);
